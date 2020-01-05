@@ -1,0 +1,18 @@
+{ 
+	# Plaatsnamen in kleine letters, zonder whitespace
+	# Spacenamen volgens https://directory.spaceapi.io/, case sensitive
+	"utrecht":	"RandomData",
+	"denhaag":	"RevSpace",
+	"arnhem":	"Hack42",
+	"heerlen":	"ACKspace",
+	"enschede":	"TkkrLab",
+	"amersfoort":	"Bitlair",
+	"leeuwarden":	"Frack",
+	"amsterdam":	"Technologia Incognita",
+	"wageningen":	"NURDSpace",
+	"venlo":	"TDvenlo",
+	"rotterdam":	"Pixelbar",
+	"nijmegen":	"Hackerspace Nijmegen",
+	"eindhoven":	"Hackalot",
+        "zwolle":       "BHack"
+}

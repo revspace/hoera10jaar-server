@@ -1,0 +1,8 @@
+[Unit]
+Description=update spaceapi urls
+
+[Service]
+Type=oneshot
+ExecStart=/home/hoera10jaar/update-urls.pl
+WorkingDirectory=/home/hoera10jaar
+User=hoera10jaar

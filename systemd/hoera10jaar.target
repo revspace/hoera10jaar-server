@@ -1,0 +1,10 @@
+[Unit]
+Description=hoera10jaar
+After=network.target
+Requires=hoera10jaar-update-urls.timer
+Requires=hoera10jaar-update-open.timer
+Requires=hoera10jaar-publish.service
+Requires=hoera10jaar-subscribe.service
+
+[Install]
+WantedBy=multi-user.target

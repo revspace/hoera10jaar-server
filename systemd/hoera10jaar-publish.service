@@ -1,0 +1,13 @@
+[Unit]
+Description=hoera10jaar mqtt output
+
+[Service]
+ExecStart=/home/hoera10jaar/publish-mqtt.pl
+WorkingDirectory=/home/hoera10jaar
+User=hoera10jaar
+Restart=always
+RestartSec=10
+
+[Install]
+WantedBy=hoera10jaar.target
+

@@ -1,0 +1,13 @@
+[Unit]
+Description=hoera10jaar mqtt input
+
+[Service]
+ExecStart=/home/hoera10jaar/subscribe-mqtt.pl
+WorkingDirectory=/home/hoera10jaar
+User=hoera10jaar
+Restart=always
+RestartSec=10
+
+[Install]
+WantedBy=hoera10jaar.target
+

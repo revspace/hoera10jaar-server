@@ -1,0 +1,8 @@
+[Unit]
+Description=update spaceapi urls from directory
+
+[Timer]
+OnCalendar=daily
+
+[Install]
+WantedBy=hoera10jaar.target

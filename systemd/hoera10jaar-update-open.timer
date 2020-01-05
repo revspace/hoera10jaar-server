@@ -1,0 +1,8 @@
+[Unit]
+Description=update space states for hoera10jaar
+
+[Timer]
+OnCalendar=minutely
+
+[Install]
+WantedBy=hoera10jaar.target

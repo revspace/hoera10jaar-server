@@ -1,0 +1,8 @@
+[Unit]
+Description=update space-state from json files for hoera10jaar
+
+[Service]
+Type=oneshot
+ExecStart=/home/hoera10jaar/update-open.pl
+WorkingDirectory=/home/hoera10jaar
+User=hoera10jaar

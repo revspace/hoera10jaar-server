@@ -1,26 +1,25 @@
 
 
-       /spaces.json/        Mapping locatie => hackerspace; met de hand bijwerken
-             |
-             V
-      [update-urls.pl]      systemd: hoera10jaar-update-urls.timer
-             |
-             V
-        /urls.json/
-             |
-             V
-      [update-open.pl]      systemd: hoera10jaar-update-open.timer
-             |
-             V
-        /open.json/         true = open, false = dicht, null = onbekend
-             |
-             V
-     [publish-mqtt.pl]      systemd: hoera10jaar-publish.service
+   /spaces.json/                        config mapping locatie => hackerspace
+         |
+         V
+  [update-urls.pl]                      systemd: hoera10jaar-update-urls.timer
+         |
+         V
+    /urls.json/
+         |
+         V
+  [update-open.pl]                      systemd: hoera10jaar-update-open.timer
+         |
+         |       [subscribe-mqtt.pl]    systemd: hoera10jaar-subscribe.service
+         |          |
+         V          V  
+ /mqtt spaceapi/  /mqtt realtime/
+         |          |
+         V          V
+      [publish-mqtt.pl]                 systemd: hoera10jaar-publish.service
              |
              V
      /mqtt hoera10jaar/ 
-             ^
-             |
-    [subscribe-mqtt.pl]     systemd: hoera10jaar-subscribe.service
 
 De services en timers zijn Required door hoera10jaar.target
